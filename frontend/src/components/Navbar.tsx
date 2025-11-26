@@ -17,9 +17,9 @@ const Navbar: React.FC = () => {
         {/* โลโก้ + ชื่อระบบ */}
         <Link to="/home" className="flex items-center gap-3">
           <img
-            src="/images/logo.png"
+            src="/images/logo3.png"
             alt="E-Library Logo"
-            className="size-32 shrink-0 rounded-full object-contain"
+            className="size-24 shrink-0 rounded-full object-contain"
           />
           <span className="text-lg font-bold tracking-wide">E-Library</span>
         </Link>

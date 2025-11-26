@@ -39,6 +39,17 @@ const resources = {
       "hero.cta.readNow": "เริ่มอ่านทันที",
       "hero.cta.newBooks": "ดูหนังสือมาใหม่",
 
+      // Home
+      "home.section.favorites": "หนังสือที่บันทึกไว้",
+      "home.section.favoritesCount": "ทั้งหมด {{count}} เล่ม",
+      "home.section.recommended": "หนังสือแนะนำสำหรับคุณ",
+      "home.section.recommendedSubtitle":
+        "ระบบจะใช้ข้อมูลจากโปรไฟล์ของคุณเพื่อแนะนำหนังสือที่ตรงความสนใจ ทั้งหนังสือมาใหม่ ยอดนิยม และอ่านต่อจากครั้งที่แล้ว",
+      "home.filter.all": "ทั้งหมด",
+      "home.filter.new": "มาใหม่",
+      "home.filter.popular": "ยอดนิยม",
+      "home.filter.continue": "อ่านต่อจากครั้งที่แล้ว",
+
       // Book card
       "book.byAuthor": "ผู้เขียน: {{author}}",
       "book.category": "หมวด: {{category}}",
@@ -48,6 +59,10 @@ const resources = {
       "book.badge.new": "ใหม่",
       "book.badge.popular": "ยอดนิยม",
       "book.badge.continue": "อ่านต่อ",
+
+      // BookCard (Favorite labels)
+      "book.favorite.add": "บันทึกหนังสือเล่มนี้",
+      "book.favorite.remove": "ลบออกจากหนังสือที่บันทึกไว้",
 
       // Footer
       "footer.aboutTitle": "รู้จักกับเรา",
@@ -114,6 +129,14 @@ const resources = {
 
       // AuthShell
       "auth.brand": "E-Library",
+
+      // modal Detail book
+      //"home.section.favorites": "หนังสือที่บันทึกไว้",
+      "bookDetail.title": "รายละเอียดหนังสือ",
+      "bookDetail.genericDescription":
+        "หนังสือเล่มนี้อยู่ในหมวด {{category}} มีทั้งหมด {{pages}} หน้า เหมาะสำหรับการอ่านเพื่อเสริมความรู้ และใช้เป็นเอกสารอ้างอิงในรายวิชาที่เกี่ยวข้อง.",
+      "bookDetail.readNow": "อ่านเล่มนี้",
+      "bookDetail.close": "ปิดหน้าต่าง",
     },
   },
   en: {
@@ -222,6 +245,30 @@ const resources = {
       "reader.noPdf": "No PDF file is available for this book (mock).",
       "reader.noPdfDescription":
         "In a real system, this section would show a PDF link loaded from a database or file storage.",
+
+      // modal Detail book
+      "home.section.favorites": "Saved books",
+      "bookDetail.title": "Book details",
+      "bookDetail.genericDescription":
+        "This book belongs to the {{category}} category and has {{pages}} pages. It is suitable for learning, self-study, and as a reference for related courses.",
+      "bookDetail.readNow": "Read this book",
+      "bookDetail.close": "Close",
+
+      // Home
+      // 'home.section.favorites': 'Saved books',
+      "home.section.favoritesCount": "Total {{count}} book(s)",
+      "home.section.recommended": "Recommended for you",
+      "home.section.recommendedSubtitle":
+        "We use your profile information to suggest books that match your interests, including new arrivals, popular titles and books you recently read.",
+
+      "home.filter.all": "All",
+      "home.filter.new": "New",
+      "home.filter.popular": "Popular",
+      "home.filter.continue": "Continue reading",
+
+      // BookCard (Favorite labels)
+      "book.favorite.add": "Add this book to favorites",
+      "book.favorite.remove": "Remove this book from favorites",
     },
   },
 };
