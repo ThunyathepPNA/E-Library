@@ -1,23 +1,22 @@
 // AuthShell.tsx - layout สำหรับหน้า Login / Profile (ไม่มี navbar + footer)
 import type { PropsWithChildren } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const AuthShell: React.FC<PropsWithChildren> = ({ children }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="flex min-h-screen flex-col bg-slate-100">
-      {/* <header className="flex items-center justify-center py-6">
-        <Link
-          to="/"
-          className="flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white shadow-soft"
-        >
-          <div className="flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-br from-white via-accent to-primary text-xs font-bold text-primary">
-            E
-          </div>
-          <span>E-Library</span>
-        </Link>
-      </header> */}
+      {/* แถบบน: โลโก้ + ปุ่มเปลี่ยนภาษา */}
+      <header className="flex items-center justify-between px-6 py-4">
 
-      {/* เนื้อหาตรงกลาง */}
+        {/* ปุ่มเปลี่ยนภาษาที่หน้า Login / Profile */}
+        <LanguageSwitcher compact />
+      </header>
+
+      {/* เนื้อหา */}
       <main className="flex flex-1 items-center justify-center px-4 pb-10">
         {children}
       </main>

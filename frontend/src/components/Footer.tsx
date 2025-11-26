@@ -1,39 +1,45 @@
 // Footer.tsx - ส่วนท้าย มีมาสคอตและลิงก์ต่าง ๆ
+import { useTranslation } from 'react-i18next';
+
 const Footer: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="mt-12 py-8">
       <div className="mx-auto max-w-5xl px-4">
         <div className="relative overflow-hidden rounded-2xl bg-primary py-6 pl-24 pr-6 text-white shadow-soft">
           {/* มาสคอต + ลิงก์ */}
-          <div className="absolute bottom-0 left-3 translate-y-2">
-              <img
-                src="/images/mascot.png"
-                alt="E-Library Mascot"
-                className="size-60 object-contain drop-shadow-lg"
-              />      
+          <div className="absolute bottom-1 left-1 translate-y-8">
+            <img
+              src="/images/mascot.png"
+              alt="E-Library Mascot"
+              className="size-60 object-contain drop-shadow-lg"
+            />
           </div>
 
           <div className="ml-40">
-            <h2 className="mb-2 text-base font-bold">รู้จักกับเรา</h2>
+            <h2 className="mb-2 text-base font-bold">
+              {t('footer.aboutTitle')}
+            </h2>
             <ul className="space-y-1 text-sm text-slate-100">
               <li>
                 <a href="#" className="hover:underline">
-                  Github โปรเจกต์ E-Library
+                  {t('footer.github')}
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:underline">
-                  ไฟล์ออกแบบบน Figma
+                  {t('footer.figma')}
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:underline">
-                  รายชื่อผู้จัดทำ
+                  {t('footer.credits')}
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:underline">
-                  ติดต่อห้องสมุด / ผู้ดูแลระบบ
+                  {t('footer.contact')}
                 </a>
               </li>
             </ul>
