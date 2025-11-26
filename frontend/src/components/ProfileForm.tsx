@@ -3,10 +3,13 @@ import { useState } from 'react';
 import type { FormEvent } from 'react';
 import type { UserProfile } from '../types';
 import { defaultUser } from '../data/mockUser';
+import { useNavigate } from 'react-router-dom';
 
 const ProfileForm: React.FC = () => {
   // ใช้ useState เก็บข้อมูลโปรไฟล์แบบ mock
   const [profile, setProfile] = useState<UserProfile>(defaultUser);
+
+  const navigate = useNavigate();
 
   const handleChange = (field: keyof UserProfile, value: string) => {
     setProfile((prev) => ({
@@ -24,6 +27,7 @@ const ProfileForm: React.FC = () => {
     e.preventDefault();
     // ตอนนี้ยังเป็น mock – แค่แสดงใน console
     console.log('Saved profile (mock):', profile);
+     navigate('/home');
   };
 
   return (

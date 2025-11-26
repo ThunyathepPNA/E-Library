@@ -1,11 +1,15 @@
 // LoginForm.tsx - ฟอร์ม login แบบใช้ email + password
 import type { FormEvent } from 'react';
+import { useNavigate, Link } from 'react-router-dom';
 
 const LoginForm: React.FC = () => {
+  const navigate = useNavigate();
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    // ตอนนี้ยังเป็น mock – สามารถ console.log แทนเรียก API
+
+    // ตรงนี้เป็น mock ยังไม่ได้เช็คจริง แค่เด้งไปหน้า Profile
     console.log('Submit login (mock only)');
+    navigate('/profile');   // 👈 กดปุ่ม "เข้าสู่ระบบ" แล้วไปหน้าโปรไฟล์
   };
 
   return (
