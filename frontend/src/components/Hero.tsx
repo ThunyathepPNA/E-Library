@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
             <div>{t('hero.stat.books')}</div>
           </div>
           <div>
-            <div className="text-lg font-bold">24/7</div>
+            <div className="text-lg font-bold">27/11</div>
             <div>{t('hero.stat.hours')}</div>
           </div>
           <div>
