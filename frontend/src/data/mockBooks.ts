@@ -9,7 +9,8 @@ export const mockBooks: Book[] = [
     category: 'เทคโนโลยี / IT',
     pages: 230,
     isPopular: true,
-    pdfUrl: '/pdfs/Data Structures & Algorithms.pdf', 
+    pdfUrl: '/pdfs/Data Structures & Algorithms.pdf',
+    coverUrl: '/images/Web.png'
   },
   {
     id: 2,
@@ -19,6 +20,7 @@ export const mockBooks: Book[] = [
     pages: 180,
     isNew: true,
     pdfUrl: '/pdfs/พื้นฐานจิตวิทยา (Basic Psychology).pdf', 
+    coverUrl: '/images/จิตวิทยา.png'
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ export const mockBooks: Book[] = [
     pages: 320,
     isPopular: true,
     pdfUrl: '/pdfs/Introduction to Web Development.pdf',
+    coverUrl: '/images/data.png'
   },
   {
     id: 4,
@@ -37,5 +40,6 @@ export const mockBooks: Book[] = [
     pages: 260,
     continueReading: true,
     pdfUrl: '/pdfs/นิยายเวลาพักเที่ยง.pdf', 
+    coverUrl: '/images/นิยาย.png'
   },
 ];

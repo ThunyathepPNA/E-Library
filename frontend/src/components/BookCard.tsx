@@ -10,7 +10,17 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
   return (
     <article className="flex flex-col gap-2 rounded-xl bg-white p-3 text-xs shadow-soft">
       {/* ปกหนังสือ (ใช้สีไล่เฉดแทนรูปจริง) */}
-      <div className="mb-1 h-36 rounded-lg bg-gradient-to-br from-primary to-accent" />
+      <div className="mb-1 h-36 overflow-hidden rounded-lg bg-slate-200">
+        {book.coverUrl ? (
+          <img
+            src={book.coverUrl}
+            alt={book.title}
+            className="h-full w-full object-cover"
+          />
+        ) : (
+          <div className="h-full w-full bg-gradient-to-br from-primary to-accent" />
+        )}
+      </div>
 
       <h3 className="text-sm font-semibold">{book.title}</h3>
       <p className="text-[11px] text-slate-500">ผู้เขียน: {book.author}</p>
@@ -22,7 +32,7 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
 
       <div className="mt-1 flex gap-2">
         {/* ทำให้ link ไปยังหน้า PDF */}
-       <Link
+        <Link
           to={`/reader/${book.id}`}
           className="flex-1 rounded-full bg-primary py-1 text-center text-[11px] font-semibold text-white hover:bg-primary/90"
         >

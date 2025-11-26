@@ -8,10 +8,12 @@ const Navbar: React.FC = () => {
     <header className="sticky top-0 z-20 w-full bg-primary/95 text-white shadow-lg backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center gap-4 px-6 py-3">
         {/* โลโก้ + ชื่อระบบ */}
-        <Link to="/" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-white via-accent to-primary text-sm font-bold text-primary">
-            E
-          </div>
+        <Link to="/home" className="flex items-center gap-2">
+          <img
+            src="/images/logo.png"
+            alt="E-Library Logo"
+            className="h-10 w-10 object-contain"
+          />
           <span className="text-lg font-bold tracking-wide">E-Library</span>
         </Link>
 
@@ -34,11 +36,10 @@ const Navbar: React.FC = () => {
 
           <Link to="/login">
             <button
-              className={`rounded-full border px-4 py-1 font-semibold transition ${
-                pathname === '/login'
+              className={`rounded-full border px-4 py-1 font-semibold transition ${pathname === '/login'
                   ? 'border-accent bg-accent text-slate-900 shadow'
                   : 'border-slate-200/70 bg-transparent text-slate-100 hover:bg-white/10'
-              }`}
+                }`}
             >
               เข้าสู่ระบบ
             </button>

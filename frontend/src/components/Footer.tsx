@@ -4,11 +4,13 @@ const Footer: React.FC = () => {
     <footer className="mt-8 bg-slate-300/80 py-4">
       <div className="mx-auto max-w-5xl px-4">
         <div className="relative overflow-hidden rounded-2xl bg-primary py-6 pl-24 pr-6 text-white shadow-soft">
-          {/* มาสคอต (ตอนนี้ใช้กล่องสีแทนรูปจริง) */}
+          {/* มาสคอต + ลิงก์ */}
           <div className="absolute bottom-0 left-3 translate-y-2">
-            <div className="h-24 w-20 rounded-2xl bg-accent shadow-lg">
-              {/* ตรงนี้สามารถเปลี่ยนเป็น <img src="..." /> ได้ */}
-            </div>
+              <img
+                src="/images/mascot.png"
+                alt="E-Library Mascot"
+                className="h-20 w-20 object-contain drop-shadow-lg"
+              />      
           </div>
 
           <div className="ml-4">

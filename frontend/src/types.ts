@@ -11,6 +11,7 @@ export interface Book {
   isPopular?: boolean;
   continueReading?: boolean;
   pdfUrl?: string;
+  coverUrl?: string;
 }
 
 // ข้อมูลผู้ใช้ (mock)
