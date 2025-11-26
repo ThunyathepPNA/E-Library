@@ -32,14 +32,14 @@ const CategorySidebar: React.FC<CategorySidebarProps> = ({
               <span>{cat}</span>
               <span>
                 {cat === 'ทั้งหมด'
-                  ? '📚'
+                  ? ''
                   : cat.includes('วิทยาศาสตร์')
-                  ? '🔬'
+                  ? ''
                   : cat.includes('เทคโนโลยี')
-                  ? '💻'
+                  ? ''
                   : cat.includes('จิตวิทยา')
-                  ? '🧠'
-                  : '📖'}
+                  ? ''
+                  : ''}
               </span>
             </button>
           </li>
@@ -54,10 +54,10 @@ const CategorySidebar: React.FC<CategorySidebarProps> = ({
               <span>{label}</span>
               <span>
                 {label === 'หนังสือมาใหม่'
-                  ? '✨'
+                  ? ''
                   : label === 'ยอดนิยม'
-                  ? '🔥'
-                  : '⭐'}
+                  ? ''
+                  : ''}
               </span>
             </button>
           </li>

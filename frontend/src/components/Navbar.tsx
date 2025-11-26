@@ -6,13 +6,13 @@ const Navbar: React.FC = () => {
 
   return (
     <header className="sticky top-0 z-20 w-full bg-primary/95 text-white shadow-lg backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center gap-4 px-6 py-3">
+      <div className="mx-auto flex h-[60px] items-center gap-4 px-6 py-3">
         {/* โลโก้ + ชื่อระบบ */}
         <Link to="/home" className="flex items-center gap-2">
           <img
             src="/images/logo.png"
             alt="E-Library Logo"
-            className="h-10 w-10 object-contain"
+            className="size-32 object-contain"
           />
           <span className="text-lg font-bold tracking-wide">E-Library</span>
         </Link>
@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
           <Link to="/profile">
             <button className="hidden items-center gap-1 rounded-full bg-accent px-4 py-1 font-semibold text-slate-900 shadow-md hover:shadow-lg md:inline-flex">
               โปรไฟล์
-              <span>👤</span>
+              <span></span>
             </button>
           </Link>
         </div>

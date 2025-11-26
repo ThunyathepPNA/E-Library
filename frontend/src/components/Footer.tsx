@@ -1,7 +1,7 @@
 // Footer.tsx - ส่วนท้าย มีมาสคอตและลิงก์ต่าง ๆ
 const Footer: React.FC = () => {
   return (
-    <footer className="mt-8 bg-slate-300/80 py-4">
+    <footer className="mt-12 py-8">
       <div className="mx-auto max-w-5xl px-4">
         <div className="relative overflow-hidden rounded-2xl bg-primary py-6 pl-24 pr-6 text-white shadow-soft">
           {/* มาสคอต + ลิงก์ */}
@@ -9,11 +9,11 @@ const Footer: React.FC = () => {
               <img
                 src="/images/mascot.png"
                 alt="E-Library Mascot"
-                className="h-20 w-20 object-contain drop-shadow-lg"
+                className="size-60 object-contain drop-shadow-lg"
               />      
           </div>
 
-          <div className="ml-4">
+          <div className="ml-40">
             <h2 className="mb-2 text-base font-bold">รู้จักกับเรา</h2>
             <ul className="space-y-1 text-sm text-slate-100">
               <li>
