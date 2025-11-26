@@ -185,28 +185,36 @@ const resources = {
       "login.apple": "Continue with Apple",
 
       // Profile
-      "profile.title": "Profile for E-Library",
-      "profile.subtitle":
-        "We use this information to personalize book recommendations and connect with university services.",
-      "profile.avatarNote":
-        "(This avatar is just a UI example – image upload is not yet implemented.)",
-      "profile.firstName": "First name",
-      "profile.lastName": "Last name",
-      "profile.studentEmail": "Student email",
-      "profile.studentId": "Student ID",
-      "profile.faculty": "Faculty / Program",
-      "profile.language": "Display language",
-      "profile.level": "Education level",
-      "profile.interests": "Preferred book topics",
-      "profile.save": "Save profile",
-      "profile.afterSaveNote":
-        "Once saved, we will use this information to recommend books that match your interests.",
+      profile: {
+        oneTime: "Set up once, use everywhere",
+        title: "Profile for E-Library",
+        subtitle:
+          "We use this information to personalize book recommendations and connect with university systems.",
 
-      "profile.language.th": "Thai",
-      "profile.language.en": "English",
-      "profile.level.bachelor": "Bachelor",
-      "profile.level.master": "Master",
-      "profile.level.phd": "Ph.D.",
+        avatarLabel: "Profile picture",
+        avatarNote:
+          "(This is only a UI example – image upload is not yet implemented.)",
+
+        firstName: "First name",
+        lastName: "Last name",
+        studentEmail: "Student email",
+        studentId: "Student ID",
+        faculty: "Faculty / Program",
+
+        language: "Display language",
+        "language.th": "Thai",
+        "language.en": "English",
+
+        level: "Education level",
+        "level.bachelor": "Bachelor",
+        "level.master": "Master",
+        "level.other": "Other",
+
+        interests: "Preferred book topics",
+        save: "Save profile",
+        afterSaveNote:
+          "Once saved, we will use this information to recommend books that match your interests.",
+      },
 
       // Reader
       "reader.notFound": "This book cannot be found in mock data.",

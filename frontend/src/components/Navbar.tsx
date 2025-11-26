@@ -62,7 +62,7 @@ const Navbar: React.FC = () => {
           <Link to="/profile">
             <button className="hidden items-center gap-1 rounded-full bg-accent px-4 py-1 font-semibold text-slate-900 shadow-md hover:shadow-lg md:inline-flex">
               {t('nav.profile')}
-              <span>👤</span>
+              <span></span>
             </button>
           </Link>
         </div>
