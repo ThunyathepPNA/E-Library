@@ -10,6 +10,7 @@ export interface Book {
   isNew?: boolean;
   isPopular?: boolean;
   continueReading?: boolean;
+  pdfUrl?: string;
 }
 
 // ข้อมูลผู้ใช้ (mock)

@@ -1,5 +1,6 @@
 // BookCard.tsx - แสดงข้อมูลหนังสือหนึ่งเล่ม
 import type { Book } from '../types';
+import { Link } from 'react-router-dom';
 
 interface BookCardProps {
   book: Book;
@@ -20,9 +21,13 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
       </div>
 
       <div className="mt-1 flex gap-2">
-        <button className="flex-1 rounded-full bg-primary py-1 text-[11px] font-semibold text-white hover:bg-primary/90">
+        {/* ทำให้ link ไปยังหน้า PDF */}
+       <Link
+          to={`/reader/${book.id}`}
+          className="flex-1 rounded-full bg-primary py-1 text-center text-[11px] font-semibold text-white hover:bg-primary/90"
+        >
           อ่านเลย
-        </button>
+        </Link>
         <button className="flex-1 rounded-full bg-slate-100 py-1 text-[11px] font-semibold text-slate-900 hover:bg-slate-200">
           ดูรายละเอียด
         </button>

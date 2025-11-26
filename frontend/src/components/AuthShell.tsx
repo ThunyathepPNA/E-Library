@@ -1,11 +1,10 @@
 // AuthShell.tsx - layout สำหรับหน้า Login / Profile (ไม่มี navbar + footer)
 import type { PropsWithChildren } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const AuthShell: React.FC<PropsWithChildren> = ({ children }) => {
   return (
     <div className="flex min-h-screen flex-col bg-slate-100">
-        
       {/* <header className="flex items-center justify-center py-6">
         <Link
           to="/"
